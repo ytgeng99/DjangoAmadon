@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Amadon Store</title>
+        <style>
+            .wrapper {
+                width: 70%;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Thank you for your business!</h1>
+            <p>We charged your credit card for {{request.session.latest_charge}}</p>
+            <p>You have ordered {{request.session.item_count}} item(s) so far and spent ${{request.session.total_charge}} with Amadon.com!</p>
+            <p><a href="/amadon">Go back</a></p>
+        </div>
+    </body>
+</html>
